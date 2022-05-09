@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- tab name -->
+		<title>
+			Moon Landing - Conspiracy Hub
+		</title>
+		
+		<!-- loads stylesheet, favicon, and scripts-->
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="img/favicon.png"><!-- used from https://www.hostinger.com/tutorials/how-to-add-favicon-to-website -->
+		<script defer src="scripts/links.js"></script>
+		<!-- Cookies Popup -->
+		<script defer src="scripts/cookies.js"></script>
+	</head>
+	
+	<body>
+		<!--navigation menu, pretty self explanatory-->
+		<nav class="menu">
+			<a href="index.html">
+				<div class="inactive">
+					Home
+				</div>
+			</a>
+			
+			<a href="flat_earth.html">
+				<div class="inactive">
+					Flat Earth
+				</div>
+			</a>
+			
+			<div class="active">
+				Moon Landing
+			</div>
+			
+			<a href="australia.html">
+				<div class="inactive">
+					Australia
+				</div>
+			</a>
+			
+			<a href="covid.html">
+				<div class="inactive">
+					COVID-19
+				</div>
+			</a>
+		</nav>
+		
+		<!--repeating background image-->
+		<div id="moon_landing_bg" class="background">
+			<div class="page_content">
+				<!--links at the top of the page to switch tabs, as well as the published date-->
+				<!--using href instead of onclick to get the link styling-->
+				<a class="tablinks linkinactive" id="contentlink">&nbsp;content&nbsp;</a>
+				<a class="tablinks linkactive" id="sourceslink" href="javascript:void(sourcesclicked())">&nbsp;sources&nbsp;</a>
+				<a id="links_rest">Published 20/08/21</a>
+				
+				<div id="page_content_container">
+					<!--Page content, nothing special-->
+					<h1>The Moon Landing was Faked</h1>
+					<p>The moon landing can't be real, because there isn't a moon to land on! The government started the conspiracy that the moon landing was faked, to deflect us from the real truth. If such a large collection of cheese really existed in the sky, it would fall down and crush us all! And when the "moon" is in a crest shape, where is all of the unused cheese stored? It's obvious that the moon is just a projection in the sky, to increase cheese sales - like how seeing the bat-signal increases bat-merch sales.	</p>
+					<img id="moon_proof" src="img/moon_proof.jpg">
+					<p>In the photograph to the right, you can see these so-called astronauts on the surface of the moon - but it clearly isn't made of cheese! The ground is clearly a light grey colour, which doesn't sound like any cheese I've ever heard of. This photo must therefore be from a crudely made movie set, as making enough cheese to fake an entire moon would've taken far too many cows. This is the same reason the moon in the sky must be a projection - there just aren't enough cows on Earth to make a real moon.</p>
+					<p>Listen to this audio recording of a KGB agent saying they faked the moon landing:</p>
+					<!--audio with standard controls-->
+					<audio controls src="media/proof.mp3" type="audio/mp3">
+						<!-- if browser doesn't support audio, display warning -->
+						Audio loading failed, update your browser.
+					</audio><br>
+					<h3>Transcription:</h3>
+					<p>My name is Anastaysia Putin, and I am a former KGB agent. We teamed up with the Americans in 1969 to convince the world that the moon landing happened. I am making this recording, so that it can be released to the world upon my death, as proof that the moon landing was faked. Let it be known that I, Anastaysia Putin the Third, am the one who has revealed this. The governments of the world are trying to stop their peoples from learning the truth, but I will bring the truth regardless. Do svidaniya, comrades. Also, make sure to like and subscribe, and purchase from our merchandise store.</p>
+					<!--links to the top of the page-->
+					<a href="#">back to top</a>
+				</div>
+				
+				<!-- sources tab, same on every content page -->
+				<div class="sources_container">
+					<h1>Sources</h1>
+					<!--text fading slowly from black to transparent-->
+					<span class="fadeout">This website strives to give you the best sources possible, which is why we've decided to show you what they are below. All of these sources are trustworthy and come from established scientific journals, so you can be sure that our information is 100% accurate!</span><br><br>
+					<!--container for paywall image-->
+					<div id="paywallcontainer">
+						<img id="paywall" src="img/paywall.png" onclick="paywallclicked()">
+					</div>
+					<!--hidden at first, container for "mining bitcoin..." text-->
+					<div id="bitcoin">
+						<br>mining bitcoin, please keep this tab open<span id="ellipsis">...</span><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- black footer with white text -->
+		<footer>
+			Any acts performed by readers of this website are not the responsibility of conspiracyhub.com or its owner. We simply provide information, it is the reader's choice to believe in it and act on it. Complaints can be sent to <a href="mailto:timothy.cahill6@education.nsw.gov.au">timothy.cahill6@education.nsw.gov.au</a><!-- mailto: will open mail app when clicked -->, and will be replied to within 30-40 business years. Usage of site may incur slight risks of blood clots, hypothermia, polio, or loss of limbs. You are at fault for this for choosing to visit this page. Click <a href="javascript:void(localStorage.removeItem(&quot;cookiesaccepted&quot;))">here</a> to re-disable cookies.
+		</footer>
+		
+		<!--Allow Cookies? popup, same on each page-->
+		<div id="cookiespopup">
+			Allow Cookies?
+			<!--When button clicked, call onbuttonclick-->
+			<button id="deny" onclick="onbuttonclick(false)">
+				<!--this text is slightly raised-->
+				<span class="raise">No</span>
+				<img src="img/cross.png">
+			</button>
+			<!--same here-->
+			<button id="allow" onclick="onbuttonclick(true)">
+				<span class="raise">Yes</span>
+				<img src="img/check.png">
+			</button>
+		</div>
+	</body>
+</html>
