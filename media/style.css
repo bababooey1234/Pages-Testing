@@ -156,22 +156,22 @@ body {
 
 /*these all define the location and size of each page's background image*/
 #flat_earth_bg {
-	background-image: url("img/flat_earth_background.png");
+	background-image: url("/img/flat_earth_background.png");
 	background-size: 20vh 20vh;
 }
 
 #moon_landing_bg {
-	background-image: url("img/moon_landing_background.jpg"); /* Public Domain, Source: https://www.outworldz.com/cgi/free-seamless-textures.plx?c=MichalFranc%20maps -> S S Moon2.jpg*/
+	background-image: url("/img/moon_landing_background.jpg"); /* Public Domain, Source: https://www.outworldz.com/cgi/free-seamless-textures.plx?c=MichalFranc%20maps -> S S Moon2.jpg*/
 	background-size: 20vh 14.9068323vh; /*keeps right aspect ratio*/
 }
 
 #australia_bg {
-	background-image: url("img/australia_background.png");
+	background-image: url("/img/australia_background.png");
 	background-size: 30vh 22.54658385vh;
 }
 
 #covid_bg {
-	background-image: url("img/covid_background.png");
+	background-image: url("/img/covid_background.png");
 	background-size: 40vh 27.98722045vh;
 }
 
